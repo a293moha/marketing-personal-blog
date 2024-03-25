@@ -1,0 +1,20 @@
+h1 {
+    font-size: 96px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-container { 
+    color: black;
+    font-size: 20px;
+    margin-inline: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+    padding: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
