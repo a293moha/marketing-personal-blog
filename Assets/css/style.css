@@ -36,3 +36,28 @@ header {
     margin-bottom: 20px;
 }
 
+button#light/dark {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #333;
+    border: solid;
+    border-radius: 5px;
+}
+
+button#backButton {
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    border: solid;
+    border-radius: 5px;
+}
+
+footer {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+dark-theme {
+    background-color: #333;
+    color: #fff;
+}
