@@ -1,15 +1,12 @@
 //displaying the blog from local storage.
 document.addEventListener('blogContent', function () {
-    function renderPosts() {
-        const postsPage = document.getElementById('postsPage');
-        const posts = JSON.parse(localStorage.getItem('posts')) || [];
-        postsPage.innerHTML = '';
-    }
+    const postsPage = document.getElementById('postsPage');
+    const posts = JSON.parse(localStorage.getItem('posts')) || [];
 });
 
-
-//toggle theme.
-const lightDarkButton = document.getElementById;
-lightDarkButton.addEventListener('click', function () {
-    document.body.classList.toggle(dark-theme);
-})
+    document.getElementById('toggleTheme').addEventListener('click', function () {
+        document.body.classList.toggle('dark-theme');
+    });
+    document.getElementById('backButton').addEventListener('click', function () {
+        window.location.href = 'index.html';
+});
