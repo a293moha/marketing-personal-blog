@@ -57,7 +57,12 @@ footer {
     color: #fff;
 }
 
-dark-theme {
+.dark-theme {
     background-color: #333;
+    color: #fff;
+}
+
+.dark-theme buttonlightDark {
+    background-color: black;
     color: #fff;
 }
