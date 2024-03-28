@@ -20,5 +20,9 @@ document.addEventListener('blogContent', function () {
         });
     });
 
-
+const posts = JSON.parse(localStorage.getItem('posts'));
+//object to string
+posts.push({username,email,title,content});
+localStorage.setItem('posts', JSON.stringify(posts));
+window.localStorage.href = 'blog.html';
 
