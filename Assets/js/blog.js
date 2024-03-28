@@ -2,7 +2,7 @@
 document.addEventListener('blogContent', function () {
     function renderPosts() {
         const postsPage = document.getElementById('postsPage');
-        const posts = JSON.parse(localStorage.getItem('posts')) [];
+        const posts = JSON.parse(localStorage.getItem('posts')) || [];
         postsPage.innerHTML = '';
     }
 });
