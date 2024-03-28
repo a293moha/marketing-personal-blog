@@ -10,19 +10,16 @@ document.addEventListener('blogContent', function () {
         const title = document.getElementById('username').value.trim();
         const content = document.getElementById('username').value.trim();
 
-
-        if (!username || email || title ||content) {
+        if (!username || !email || !title || !content) {
         alert('Try Again.');
         return;
         }
 
         alert('Thank You for your submission!');
-        });
-    });
-
-const posts = JSON.parse(localStorage.getItem('posts'));
-//object to string
-posts.push({username,email,title,content});
-localStorage.setItem('posts', JSON.stringify(posts));
-window.localStorage.href = 'blog.html';
-
+        const posts = JSON.parse(localStorage.getItem('posts'));
+        //object to string
+        posts.push({username,email,title,content});
+        localStorage.setItem('posts', JSON.stringify(posts));
+        window.localStorage.href = 'blog.html';
+    })
+});
