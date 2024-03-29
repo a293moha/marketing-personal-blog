@@ -9,8 +9,8 @@ document.getElementById('blogForm').addEventListener('submit', function (event) 
         const content = document.getElementById('content').value.trim();
         successMessage.textContent = 'Thank you for your submission!';
         successMessage.style.color = 'green';
-        successMessage.style.marginTop = '1rem'
-        formContainer.appendChild(successMessage);
+        successMessage.style.display = 'block'
+        document.body.appendChild(successMessage);
 
         if (!username || !email || !title || !content) {
         alert('Try Again.');
@@ -23,6 +23,7 @@ document.getElementById('blogForm').addEventListener('submit', function (event) 
         posts.push({username,email,title,content});
         localStorage.setItem('posts', JSON.stringify(posts));
         
-        window.location.href = 'blog.html';
+        window.location.href = "blog.html";
     })
+
 
