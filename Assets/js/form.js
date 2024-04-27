@@ -7,6 +7,7 @@ document.getElementById('blogForm').addEventListener('submit', function (event) 
         const email = document.getElementById('email').value.trim();
         const title = document.getElementById('title').value.trim();
         const content = document.getElementById('content').value.trim();
+        const successMessage = document.getElementById('successMessage'); //added
         successMessage.textContent = 'Thank you for your submission!';
         successMessage.style.color = 'green';
         successMessage.style.display = 'block'

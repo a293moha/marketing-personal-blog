@@ -9,4 +9,4 @@ This is a assignment for school showcasing skills learned in HTML, CSS, JavaScri
 
 ## Screenshot
 ![alt text](marketingblog.png)
-![alt text](image.png)
+![alt text](blogentry.png)
